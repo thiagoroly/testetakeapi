@@ -6,7 +6,7 @@ module.exports = {
     getData: async (req, res) => {
         const url = 'https://api.github.com/orgs/';
         const wordQuery = 'takenet';
-        const queryParams = '/repos?language=c%23&per_page=5';
+        const queryParams = '/repos?language=c%23';
         const endpoint = `${url}${wordQuery}${queryParams}`;
         try {
             const response = await fetch(
